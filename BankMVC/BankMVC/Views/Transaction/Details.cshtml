@@ -1,0 +1,58 @@
+﻿@model BankMVC.Models.TransactionViewModel
+
+@{
+    ViewBag.Title = "Операция выполнена";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div>
+    <h4>Остаток: @ViewBag.Account</h4>
+    <hr/>
+    <h4>@ViewBag.text</h4>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Banknote100)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Banknote100)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Banknote500)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Banknote500)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Banknote1000)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Banknote1000)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Banknote5000)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Banknote5000)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransactionValue)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Домой", "Index")
+</p>

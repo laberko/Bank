@@ -1,0 +1,30 @@
+4:27:39 : Service state: Opened. Press Ctrl-C to stop.
+4:27:42 : Service state: Closed. Press a key to exit.
+4:31:38 : Service state: Opened. Press Ctrl-C to stop.
+4:32:05 : List of transactions sent to client. Count = 10
+4:32:05 : ATM state sent to client.
+4:32:44 : List of transactions sent to client. Count = 10
+4:32:44 : ATM state sent to client.
+4:32:56 : ATM state sent to client.
+4:35:19 : List of transactions sent to client. Count = 10
+4:35:19 : ATM state sent to client.
+4:35:21 : ATM state sent to client.
+4:35:22 : ATM state sent to client.
+4:35:25 : ATM state sent to client.
+4:35:27 : ATM state sent to client.
+4:35:29 : List of transactions sent to client. Count = 10
+4:35:29 : ATM state sent to client.
+4:35:46 : Service state: Closed. Press a key to exit.
+4:37:35 : Service state: Opened. Press Ctrl-C to stop.
+4:37:44 : List of transactions sent to client. Count = 10
+4:37:44 : ATM state sent to client.
+4:37:49 : ATM state sent to client.
+4:38:02 : ATM state sent to client.
+4:38:02 : 2500 put to account.
+4:38:09 : ATM state sent to client.
+4:38:13 : ATM state sent to client.
+4:38:27 : ATM state sent to client.
+4:38:33 : 1000 put to account.
+4:38:33 : ATM state sent to client.
+4:38:42 : List of transactions sent to client. Count = 10
+4:38:42 : ATM state sent to client.

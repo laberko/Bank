@@ -1,0 +1,57 @@
+﻿@model BankMVC.Models.TransactionViewModel
+
+@{
+    ViewBag.Title = "Получить наличные";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<h3>На счету: @ViewBag.Account</h3>
+<h4>Банкомат может выдать @Model.TransactionValue</h4>
+<h4>следующими банкнотами:</h4>
+<div>
+
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Banknote100)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Banknote100)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Banknote500)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Banknote500)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Banknote1000)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Banknote1000)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Banknote5000)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Banknote5000)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Согласен, давайте" class="btn btn-default" /> |
+            @Html.ActionLink("Домой", "Index")
+        </div>
+    }
+</div>

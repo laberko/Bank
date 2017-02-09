@@ -1,0 +1,66 @@
+﻿@model IEnumerable<BankMVC.Models.TransactionViewModel>
+
+@{
+    ViewBag.Title = "История";
+}
+
+<h2>На счету: @ViewBag.Account</h2>
+
+<p>
+    Показаны последние 10 операций
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IsIncome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Banknote100)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Banknote500)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Banknote1000)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Banknote5000)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TransactionValue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeStamp)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsIncome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Banknote100)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Banknote500)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Banknote1000)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Banknote5000)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TransactionValue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TimeStamp)
+        </td>
+    </tr>
+}
+
+</table>
+<div>
+    @Html.ActionLink("Домой", "Index")
+</div>

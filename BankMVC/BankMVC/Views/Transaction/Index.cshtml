@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Банкомат";
+}
+
+<div class="jumbotron">
+    <h1>@ViewBag.Title</h1>
+    <p class="lead">Выберите нужную операцию</p>
+    @Html.ActionLink("Внести наличные", "PutMoney", "Transaction", null, new { @class = "btn btn-primary btn-lg" })
+    @Html.ActionLink("Получить наличные", "GetMoneyValue", "Transaction", null, new { @class = "btn btn-primary btn-lg" })
+    @Html.ActionLink("Выписка", "Atm", "Transaction", null, new { @class = "btn btn-primary btn-lg" })
+    @Html.ActionLink("История операций", "History", "Transaction", null, new { @class = "btn btn-primary btn-lg" })
+</div>
