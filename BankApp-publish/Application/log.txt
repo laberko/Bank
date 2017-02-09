@@ -28,3 +28,7 @@
 4:38:33 : ATM state sent to client.
 4:38:42 : List of transactions sent to client. Count = 10
 4:38:42 : ATM state sent to client.
+4:56:50 : Service state: Opened. Press Ctrl-C to stop.
+4:57:06 : ATM state sent to client.
+4:57:08 : List of transactions sent to client. Count = 10
+4:57:16 : Service state: Closed. Press a key to exit.
